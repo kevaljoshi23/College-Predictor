@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+   <title></title>
+   <link rel="stylesheet" href="../static/css/stylems.css">
+</head>
+
+<body>
+ <div class="reg">
+	<h1>Predicting Chance Of Admit</h1>
+	</div>
+ <div class="abc">
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predictms')}}"method="post">
+	
+		<h2 class="name">Enter GRE SCORE</h2>
+		<input class="gre" type="text" name="gre"  placeholder="Score" required="required" />
+		
+		<h2 class="name">Enter TOEFL SCORE</h2>
+		<input class="toefl" type="text" name="toefl" placeholder="Score" required="required" />
+		
+		<h2 class="name">UNIVERSITY RATING</h2>
+		<input class="ur" type="text" name="ur" placeholder="Rating" required="required" />
+		
+		<h2 class="name">SOP</h2>
+		<input class="sop" type="text" name="sop" placeholder="5 or below" required="required" />
+		
+		<h2 class="name">LOR</h2>
+		<input class="lor" type="text" name="lor" placeholder="5 or below" required="required" />
+		
+		<h2 class="name">CGPA</h2>
+		<input class="cgpa" type="text" name="cgpa" placeholder="score" required="required" />
+		
+		<h2 class="name">RESEARCH</h2>
+		<input class="res" type="text" name="res" placeholder="1 or 0" required="required" />
+		
+		<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br><pre>
+	<div class="pred">		{{ prediction_text }}       </div>
+</pre>
+ </div>
+ <h1><a href="{{ url_for('index')}}" style="border:2px solid black;background-color:yellow;position:absolute;left:100px;padding:10px;font-size:30px;">Back</a></h1>
+
+</body>
+</html>

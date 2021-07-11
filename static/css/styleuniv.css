@@ -1,0 +1,31 @@
+.reg{
+	width:800px;
+	background-color:#FFD700;
+	margin:auto;
+	color:black;
+	padding:10px 0px 10px 0px;
+	text-align:center;
+	border-radius:15px 15px 0px 0px;
+	opacity:0.85;
+}
+.abc{
+	background-color:#F0FFFF;
+	width:800px;
+	margin:auto;
+	opacity:0.7;
+}
+.abc li{
+	text-align:center;
+	font-size:50px;
+	font-family:sans-serif;
+	padding:20px;
+}
+body{
+	background-image:url('univ.jpg');
+	background-position:center;
+	background-size:cover;
+	font-family:sans-serif;
+}
+.abc a:hover{
+background-color:blue;
+}

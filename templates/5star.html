@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #AED6F1 
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 10px;
+  text-align: center;
+  background-color:#D8BFD8 ;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  background-color: white
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1><font color="black"><b>FOREIGN UNIVERSITIES FOR MS</b></font></h1>
+  <p><font color="black"><b>Select the university</b></font></p>
+  
+</div>
+
+<h2 style="text-align:center;background-color: #DC143C;padding: 5px;color: white">UNITED STATES OF AMERICA</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <a href="{{ url_for('msform')}}">
+      <img src = "{{ url_for('static', filename="mit1.jpg")}}" alt="mit" style="width:100%; width: 400px; height: 350px">
+    </a>
+      <div class="container">
+        <h2>Massachusetts Institute of Technology</h2>
+        <p class="title">USA</p>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+	<a href="{{ url_for('msform')}}">
+      <img src="{{ url_for('static', filename="stanford.jpg")}}" alt="stanford" style="width:100%; width: 400px; height: 350px"></a>
+      <div class="container">
+        <h2>Stanford University</h2>
+        <p class="title">USA</p>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+	<a href="{{ url_for('msform')}}">
+      <img src="{{ url_for('static', filename="harvard.jpg")}}" alt="Harvard" style="width:100%; width: 400px; height: 350px"></a>
+      <div class="container">
+        <h2>Harvard University</h2>
+        <p class="title">USA</p>
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+<h2 style="text-align:center;background-color: #DC143C ;padding: 5px;color: white">AUSTRALIA</h2>
+<div class="row">
+<div class="column">
+    <div class="card">
+	<a href="{{ url_for('msform')}}">
+      <img src="{{ url_for('static', filename="melbourne.jpg")}}" alt="melbourne" style="width:100%; width: 400px; height: 350px"></a>
+      <div class="container">
+        <h2>University of Melbourne</h2>
+        <p class="title">Australia</p>
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+	<a href="{{ url_for('msform')}}">
+      <img src="{{ url_for('static', filename="sydney.jpg")}}" alt="sydney" style="width:100%; width: 400px; height: 350px"></a>
+      <div class="container">
+        <h2>The University of Sydney</h2>
+        <p class="title">Australia</p>
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+	<a href="{{ url_for('msform')}}">
+      <img src="{{ url_for('static', filename="australian.jpg")}}" alt="australian" style="width:100%; width: 400px; height: 350px"></a>
+      <div class="container">
+        <h2>Australian National University</h2>
+        <p class="title">Australia</p>
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+<h2 style="text-align:center;background-color:#DC143C;padding: 5px;color: white">CANADA</h2>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+	<a href="{{ url_for('msform')}}">
+      <img src="{{ url_for('static', filename="toronto.jpg")}}" alt="toronto" style="width:100%; width: 400px; height: 350px"></a>
+      <div class="container">
+        <h2>University of Toronto</h2>
+        <p class="title">Canada</p>
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+	<a href="{{ url_for('msform')}}">
+      <img src="{{ url_for('static', filename="british.jpg")}}" alt="british-coloumbia" style="width:100%; width: 400px; height: 350px"></a>
+      <div class="container">
+        <h2>The University of British Columbia</h2>
+        <p class="title">Canada</p>
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+	<a href="{{ url_for('msform')}}">
+      <img src="{{ url_for('static', filename="waterloo.jpg")}}" alt="waterloo" style="width:100%; width: 400px; height: 350px"></a>
+      <div class="container">
+        <h2>The University of Waterloo</h2>
+        <p class="title">Canada</p>
+       
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../static/css/style2.css">
+</head>
+<body style="background:linear-gradient(57deg,#FFCC33,#FF9933);">
+	<header class="sh">
+		<nav>
+			<div class="logo">
+				<h1>ADMISSION PORTAL</h1>
+			</div>
+			<div class="menu">
+				<a href="{{ url_for('index')}}">Home</a>
+				<a href="{{ url_for('aboutus')}}">AboutUs</a>
+				<a href="{{ url_for('contactus')}}">ContactUs</a>
+			</div>
+		</nav>
+		<section>
+			<div class="leftside">
+				<img src="{{ url_for('static', filename="grad.jpg")}}">
+			</div>
+			<div class="rightside">
+				<h1>ADMISSION PREDICTION WEBSITE</h1>
+				<p><u>
+				<font color="red"">We predict the approximate chances of your 
+				admission in an Unversity or College.<br/>Depending upon yours score in various entrance exam.</font></u>
+				</p>
+				<img src="{{ url_for('static', filename="man1.jpg")}}" style="height:150px">
+			</div>
+		</section>
+	</header>
+	<div class="bor">
+		<h1><a href="{{ url_for('university')}}">Universities For Master's Degree</a></h1>
+		<div class="maindiv">
+		</div>
+	</div>
+	<div class="ok">
+		<h1><a href="{{ url_for('collegeform')}}">College For Engineering after 12th</a></h1>
+		<div class="md">
+		</div>
+	</div>
+
+</body>
+</html>
